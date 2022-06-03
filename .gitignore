@@ -29,3 +29,7 @@ microservice-1/admin/admin/__pycache__/wsgi.cpython-38.pyc
 microservice-1/admin/admin/__pycache__/wsgi.cpython-39.pyc
 
 
+microservice-1/admin/products/__pycache__/urls.cpython-39.pyc
+microservice-1/admin/products/__pycache__/views.cpython-39.pyc
+microservice-1/admin/products/__pycache__/serializers.cpython-39.pyc
+microservice-1/admin/.dbdata/ibtmp1
