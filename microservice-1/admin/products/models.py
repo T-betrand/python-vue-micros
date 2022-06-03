@@ -8,4 +8,5 @@ class Product(models.Model):
 
 
 class User(models.Model):
-    pass
+    name = models.CharField(max_length=20, default='username')
+    age = models.IntegerField(default=0)
