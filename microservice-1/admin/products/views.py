@@ -1,7 +1,7 @@
-from rest_framework import viewsets, status 
+from rest_framework import viewsets, status
 from rest_framework.response import Response
 
-from .models import Product
+from .models import Product, User
 from .serializers import ProductSerializer
 
 # Create your views here.
@@ -21,11 +21,22 @@ class ProductViewSet(viewsets.ViewSet):
 
 
     def retrieve(self, request, pk=None): 
-        pass
+        product = Product.objects.get(id=pk)
+        serializer = ProductSerializer(product)
+        return Response(serializer.data)
 
 
     def update(self, request, pk=None):
-        pass
+        product = Product.objects.get(id=pk)
+        serializer = ProductSerializer(instance=product, data=request.data)
+        serializer.is_valid(raise_exception=True)
+        serializer.save()
+        return Response(serializer.data, status=status.HTTP_202_ACCEPTED)
+
 
     def destroy(self, request, pk=None): 
-        pass
+        product = Product.objects.get(id=pk)
+        product.delete()
+        return Response(status=status.HTTP_204_NO_CONTENT)
+
+
