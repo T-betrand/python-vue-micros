@@ -21,6 +21,12 @@ urlpatterns = [
         'get': 'list',
         'post': 'create',
     })),
+
+    path('user/<str:pk>', UserViewSet.as_view({
+        'get': 'retrieve',
+        'put': 'update',
+        'delete': 'destroy',
+    })),
     
 
     path('user', UserAPIView.as_view())
