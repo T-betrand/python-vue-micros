@@ -48,3 +48,12 @@ microservice-2/.dbdata/private_key.pem
 microservice-2/.dbdata/public_key.pem
 microservice-2/.dbdata/server-cert.pem
 microservice-2/.dbdata/server-key.pem
+microservice-1/admin/products/__pycache__/producer.cpython-39.pyc
+microservice-2/__pycache__/main.cpython-39.pyc
+microservice-2/migrations/alembic.ini
+microservice-2/migrations/env.py
+microservice-2/migrations/script.py.mako
+microservice-2/migrations/__pycache__/env.cpython-39.pyc
+microservice-2/migrations/versions/f650159e689a_.py
+microservice-2/migrations/versions/__pycache__/f650159e689a_.cpython-39.pyc
+microservice-2/migrations/README
