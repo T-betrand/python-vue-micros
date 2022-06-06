@@ -15,7 +15,7 @@ class ProductViewSet(viewsets.ViewSet):
     def list(self, request):
         products = Product.objects.all()
         serializer = ProductSerializer(products, many=True)
-        publish() # for rabbitmq
+        # publish() # for rabbitmq
         return Response(serializer.data)
 
     
