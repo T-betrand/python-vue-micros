@@ -57,3 +57,5 @@ microservice-2/migrations/__pycache__/env.cpython-39.pyc
 microservice-2/migrations/versions/f650159e689a_.py
 microservice-2/migrations/versions/__pycache__/f650159e689a_.cpython-39.pyc
 microservice-2/migrations/README
+vue-crud/.eslintrc.js
+vue-crud/.browserslistrc
