@@ -11,10 +11,7 @@
   height: 16px;
 }
 
-.container {
-  margin: auto;
-  padding: auto;
-}
+
 /*
  * Sidebar
  */
@@ -47,6 +44,7 @@
   overflow-x: hidden;
   overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
 }
+
 
 .sidebar .nav-link {
   font-weight: 500;

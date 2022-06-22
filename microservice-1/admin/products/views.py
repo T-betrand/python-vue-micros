@@ -12,6 +12,13 @@ import random
 # Create your views here.
 class ProductViewSet(viewsets.ViewSet):
 
+    def like(self, request, pk=None):
+        product = Product.objects.get(id=pk)
+        product.likes += 1
+        product.save()
+        return Response(product.likes, status=status.HTTP_202_ACCEPTED)
+
+
     def list(self, request):
         products = Product.objects.all()
         serializer = ProductSerializer(products, many=True)
