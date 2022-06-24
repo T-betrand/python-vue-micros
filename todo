@@ -1,0 +1,10 @@
+## Base
+- how to move dir into dif git branches or 
+- how to track, build and deploy changes just from a specific directory
+
+# using single branch for multiple apps or different branches
+- git hub actions to automate deploy on netlify 
+- git hub actions to automate deploy on heroku
+
+## intermidiary
+- deploy vue app best practices
